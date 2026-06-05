@@ -1,0 +1,213 @@
+{
+  "modules": {
+    "ingestion": {
+      "name": "Data Ingestion",
+      "description": "Data source integration and pipeline setup",
+      "complexity_levels": {
+        "simple": {
+          "name": "Simple",
+          "description": "Single source, basic transformation",
+          "base_cost": 5000,
+          "includes": [
+            "1 data source",
+            "Basic ETL pipeline",
+            "Daily batch processing",
+            "Standard monitoring"
+          ]
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "Multiple sources, standard ETL",
+          "base_cost": 15000,
+          "includes": [
+            "2-5 data sources",
+            "Standard transformations",
+            "Daily/hourly scheduling",
+            "Data validation",
+            "Error handling"
+          ]
+        },
+        "complex": {
+          "name": "Complex",
+          "description": "Advanced transformations, real-time",
+          "base_cost": 30000,
+          "includes": [
+            "5-10 data sources",
+            "Advanced transformations",
+            "Real-time streaming (optional)",
+            "Complex error handling",
+            "Retry mechanisms",
+            "Data quality checks"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Custom solution, full support",
+          "base_cost": 50000,
+          "includes": [
+            "Unlimited data sources",
+            "Custom transformations",
+            "Real-time & batch",
+            "High availability setup",
+            "Disaster recovery",
+            "Dedicated support"
+          ]
+        }
+      }
+    },
+    "datasets": {
+      "name": "Datasets Management",
+      "description": "Data organization, storage, and management",
+      "complexity_levels": {
+        "simple": {
+          "name": "Simple",
+          "description": "1-5 datasets, basic schema",
+          "base_cost": 3000,
+          "includes": [
+            "1-5 datasets",
+            "Basic data schema",
+            "Simple metadata",
+            "Basic partitioning"
+          ]
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "5-20 datasets, standard governance",
+          "base_cost": 10000,
+          "includes": [
+            "5-20 datasets",
+            "Detailed schema design",
+            "Data lineage tracking",
+            "Access controls",
+            "Basic data governance",
+            "Metadata management"
+          ]
+        },
+        "complex": {
+          "name": "Complex",
+          "description": "20+ datasets, advanced lineage",
+          "base_cost": 25000,
+          "includes": [
+            "20+ datasets",
+            "Complex relationships",
+            "Advanced data lineage",
+            "Role-based access",
+            "Data governance framework",
+            "Quality metrics",
+            "Data cataloging"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Custom data catalog, full governance",
+          "base_cost": 40000,
+          "includes": [
+            "Unlimited datasets",
+            "Custom data catalog",
+            "Advanced governance",
+            "Compliance frameworks (GDPR, HIPAA)",
+            "Data discovery tools",
+            "Advanced security",
+            "Audit trails"
+          ]
+        }
+      }
+    },
+    "bi_reports": {
+      "name": "BI Reports",
+      "description": "Analytics, dashboards, and reporting",
+      "complexity_levels": {
+        "simple": {
+          "name": "Simple",
+          "description": "1-5 reports, basic dashboards",
+          "base_cost": 4000,
+          "includes": [
+            "1-5 reports",
+            "Basic dashboards",
+            "Standard visualizations",
+            "Email distribution"
+          ]
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "5-15 reports, interactive dashboards",
+          "base_cost": 12000,
+          "includes": [
+            "5-15 reports",
+            "Interactive dashboards",
+            "Multiple chart types",
+            "Drill-down capabilities",
+            "Scheduled reports",
+            "User access management"
+          ]
+        },
+        "complex": {
+          "name": "Complex",
+          "description": "15+ reports, advanced analytics",
+          "base_cost": 28000,
+          "includes": [
+            "15+ reports",
+            "Advanced dashboards",
+            "Custom visualizations",
+            "Advanced filtering",
+            "Predictive analytics",
+            "Real-time monitoring",
+            "Mobile dashboards"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Full BI platform, custom analytics",
+          "base_cost": 45000,
+          "includes": [
+            "Unlimited reports",
+            "Full BI platform",
+            "Custom analytics",
+            "AI-powered insights",
+            "White-label options",
+            "Advanced security",
+            "Dedicated BI team support"
+          ]
+        }
+      }
+    }
+  },
+  "addons": {
+    "support": {
+      "name": "24/7 Support",
+      "description": "Round-the-clock technical support",
+      "cost": 5000
+    },
+    "training": {
+      "name": "Team Training",
+      "description": "Comprehensive training program for your team",
+      "cost": 8000
+    },
+    "migration": {
+      "name": "Migration Assistance",
+      "description": "Full support for migration from legacy systems",
+      "cost": 15000
+    },
+    "custom_integration": {
+      "name": "Custom Integration",
+      "description": "Custom API and system integrations",
+      "cost": 12000
+    },
+    "security_audit": {
+      "name": "Security Audit",
+      "description": "Comprehensive security assessment",
+      "cost": 10000
+    },
+    "performance_tuning": {
+      "name": "Performance Tuning",
+      "description": "Optimization and performance tuning",
+      "cost": 7000
+    }
+  },
+  "discounts": {
+    "annual_commitment": {
+      "10_percent": "10% discount for 1-year commitment",
+      "20_percent": "20% discount for 2+ year commitment"
+    }
+  }
+}
