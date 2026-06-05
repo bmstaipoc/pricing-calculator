@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timezone Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <header>
+            <h1>🌍 Global Time Zone Clock</h1>
+            <p class="subtitle">Real-time display across multiple time zones</p>
+        </header>
+
+        <main>
+            <!-- Controls Section -->
+            <section class="controls-section">
+                <div class="control-group">
+                    <label for="timezone-select">Add Time Zone:</label>
+                    <select id="timezone-select">
+                        <option value="">-- Select a timezone --</option>
+                        <optgroup label="North America">
+                            <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                            <option value="America/Denver">Denver (MST/MDT)</option>
+                            <option value="America/Chicago">Chicago (CST/CDT)</option>
+                            <option value="America/New_York">New York (EST/EDT)</option>
+                            <option value="America/Toronto">Toronto (EST/EDT)</option>
+                            <option value="America/Mexico_City">Mexico City (CST/CDT)</option>
+                        </optgroup>
+                        <optgroup label="South America">
+                            <option value="America/Sao_Paulo">São Paulo (BRT)</option>
+                            <option value="America/Buenos_Aires">Buenos Aires (ART)</option>
+                            <option value="America/Lima">Lima (PET)</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="Europe/London">London (GMT/BST)</option>
+                            <option value="Europe/Paris">Paris (CET/CEST)</option>
+                            <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                            <option value="Europe/Madrid">Madrid (CET/CEST)</option>
+                            <option value="Europe/Amsterdam">Amsterdam (CET/CEST)</option>
+                            <option value="Europe/Rome">Rome (CET/CEST)</option>
+                            <option value="Europe/Moscow">Moscow (MSK)</option>
+                        </optgroup>
+                        <optgroup label="Middle East & Africa">
+                            <option value="Africa/Cairo">Cairo (EET)</option>
+                            <option value="Africa/Johannesburg">Johannesburg (SAST)</option>
+                            <option value="Asia/Dubai">Dubai (GST)</option>
+                            <option value="Asia/Jerusalem">Jerusalem (IST/IDT)</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="Asia/Kolkata">India (IST)</option>
+                            <option value="Asia/Bangkok">Bangkok (ICT)</option>
+                            <option value="Asia/Shanghai">Shanghai (CST)</option>
+                            <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+                            <option value="Asia/Tokyo">Tokyo (JST)</option>
+                            <option value="Asia/Seoul">Seoul (KST)</option>
+                            <option value="Asia/Singapore">Singapore (SGT)</option>
+                        </optgroup>
+                        <optgroup label="Oceania">
+                            <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+                            <option value="Australia/Melbourne">Melbourne (AEDT/AEST)</option>
+                            <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+                            <option value="Pacific/Fiji">Fiji (FJT)</option>
+                        </optgroup>
+                    </select>
+                    <button id="add-btn" class="btn btn-primary">+ Add</button>
+                </div>
+
+                <div class="quick-presets">
+                    <button class="preset-btn" data-preset="default">🌍 Default Set</button>
+                    <button class="preset-btn" data-preset="americas">🌎 Americas</button>
+                    <button class="preset-btn" data-preset="europe-africa">🌍 Europe/Africa</button>
+                    <button class="preset-btn" data-preset="asia-pacific">🌏 Asia/Pacific</button>
+                </div>
+            </section>
+
+            <!-- Clock Display Section -->
+            <section class="clocks-section">
+                <div id="clocks-container" class="clocks-grid">
+                    <!-- Clocks will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Multi-Timezone Digital Clock | Local time updates in real-time</p>
+        </footer>
+    </div>
+
+    <script src="clock.js"></script>
+</body>
+</html>
